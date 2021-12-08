@@ -1,3 +1,12 @@
+/*
+Denna Fil är skriven i ES6+ och stöds inte i Internet explorer
+att dekelerationer i let/const och användningen av `Backticks` m.m. stöds inte i IE11
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+
+
+*/
+
+
 // Array med alla produkter
 const products = [
     { id: 1, title: "Rubrik", description: "Beskrivning", price: 123 },
@@ -10,7 +19,6 @@ const products = [
 // Prova att öppna sidan i incognitomode och se att du får ett nytt varje gång.
 function getCustomerId() {
     let customerId = localStorage.getItem("customerid");
-
     if (customerId === null) {
         customerId = Math.floor(Math.random() * 1000000000) + 1000000000;
         localStorage.setItem("customerid", customerId);

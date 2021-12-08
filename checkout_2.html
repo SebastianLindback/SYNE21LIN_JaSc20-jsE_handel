@@ -12,12 +12,27 @@
     <h1>TUC Sales</h1>
     <h2>Betalning</h2>
     <div class="formdiv">
-        <form>
-            FORMULÄR saknas
+      <form class="paymentForm" action="checkout_2.html" method="post" autocomplete="off">
+        <span>
+          <label for="personNr">Personnummer</label>
+          <input type="text" name="personNr" placeholder="(xx)xxxxxx(-)xxxx" required pattern="(19|20)?[0-9]{6}-?[0-9]{4}" maxlength="13"></span>
 
-            <button onclick="pay()">Betala!</button>
-        </form>
+        <span>
+          <label for="creditcard">Betalkort</label>
+          <input type="text" name="creditcard" placeholder="xxxx xxxx xxxx xxxx" required pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" maxlength="19"></span>
+        <span>
+          <label for="creditcard_expire">Giltigt till</label>
+          <input type="month" name="creditcard_expire" class="setMinDate" min="2021-01" required></span>
+        <span>
+          <label for="creditcard_cvv">CVV</label>
+          <input type="text" name="creditcard_cvv" pattern="[0-9]{3}" maxlength="3" required></span>
+
+
+
+        <button type="submit" name="button">Bekräfta</button>
+      </form>
     </div>
+    <script src="JS/main.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -35,4 +37,32 @@
     margin: 10px;
     border: 1px solid black;
     padding: 10px;
+}
+.contactForm {
+  width: 300px;
+}
+.paymentForm{
+  width:300px;
+}
+span {
+  width: 100%;
+  float: left;
+}
+input {
+  width: 100%;
+
+}
+
+input:valid  {
+  color: green !important;
+  font-weight:bold !important;
+
+
+}
+input:invalid{
+  color:red;
+}
+label {
+  font-size: 18px;
+  font-weight: bold;
 }
