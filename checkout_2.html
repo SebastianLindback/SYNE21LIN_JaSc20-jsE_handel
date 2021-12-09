@@ -11,6 +11,9 @@
 <body>
     <h1>TUC Sales</h1>
     <h2>Betalning</h2>
+    <div class="contactDisplay">
+      <p></p>
+    </div>
     <div class="formdiv">
       <form class="paymentForm" action="checkout_2.html" method="post" autocomplete="off">
         <span>
@@ -29,10 +32,15 @@
 
 
 
-        <button type="submit" name="button">Bekräfta</button>
+        <button type="button" name="button" onclick="getCustomerInfo('paymentForm');">Bekräfta</button>
       </form>
     </div>
+
     <script src="JS/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      setMinDate();
+      displayContact();
+    </script>
 </body>
 
 </html>
