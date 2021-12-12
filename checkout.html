@@ -9,13 +9,14 @@
 </head>
 
 <body>
-  <h1>TUC Sales</h1>
+  <a href="index.html"><h1>TUC Sales</h1></a>
   <h2>Ange din information</h2>
   <div class="cartcontainer">
 
   </div>
+  <button class="emptyCart" type="button" name="button" onclick="emptyCart();" >Töm Varukorg</button>
   <div class="formdiv">
-    <form class="contactForm" action="#" method="post" autocomplete="off">
+    <form class="contactForm" action="checkout_2.html" method="post" autocomplete="off">
       <span>
         <label for="firstname">Förnamn</label>
         <input type="text" name="firstname" placeholder="Sven" required pattern="[a-zA-Z]{2}[a-zA-Z]+"></span>
@@ -35,7 +36,7 @@
         <label for="areacode">Postnummer</label>
         <input type="text" name="areacode" placeholder="XXX XX"  pattern="[0-9]{3} ?[0-9]{2}" maxlength="6"></span>
 
-        <button type="button" name="button" onclick="getCustomerInfo('contactForm');">Bekräfta</button>
+        <button type="submit" name="button" onclick="getCustomerInfo('contactForm');">Bekräfta</button>
     </form>
   </div>
   <script src="JS/cart.js"></script>

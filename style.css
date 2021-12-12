@@ -7,7 +7,7 @@
     margin: 10px;
     border: 1px solid black;
 }
-
+.emptyCart {display: none;}
 .item {
     min-width: 40%;
     flex: 1;

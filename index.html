@@ -9,14 +9,20 @@
 </head>
 
 <body>
-    <h1>TUC Sales</h1>
+    <a href="index.html"><h1>TUC Sales</h1></a>
+
     <a href="checkout.html">Till betalning!</a>
+    <div class="cartcontainer"></div>
+    <button class="emptyCart" type="button" name="button" onclick="emptyCart();" >Töm Varukorg</button>
+
     <div class="container">
 
     </div>
+
     <script src="JS/cart.js"></script>
     <script>
         displayProducts();
+        emptyCart();
     </script>
 </body>
 

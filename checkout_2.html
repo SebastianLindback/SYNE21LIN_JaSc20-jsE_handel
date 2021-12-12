@@ -9,20 +9,20 @@
 </head>
 
 <body>
-    <h1>TUC Sales</h1>
+    <a href="index.html"><h1>TUC Sales</h1></a>
     <h2>Betalning</h2>
     <div class="contactDisplay">
       <p></p>
     </div>
     <div class="formdiv">
-      <form class="paymentForm" action="checkout_2.html" method="post" autocomplete="off">
+      <form class="paymentForm" action="receipt.html" method="post" autocomplete="off">
         <span>
           <label for="personNr">Personnummer</label>
-          <input type="text" name="personNr" placeholder="(xx)xxxxxx(-)xxxx" required pattern="(19|20)?[0-9]{6}-?[0-9]{4}" maxlength="13"></span>
+          <input type="text" name="personNr" placeholder="(xx)xxxxxx(-)xxxx" required pattern="^(19|20)?[0-9]{6}[- ]?[0-9]{4}$" maxlength="13"></span>
 
         <span>
           <label for="creditcard">Betalkort</label>
-          <input type="text" name="creditcard" placeholder="xxxx xxxx xxxx xxxx" required pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" maxlength="19"></span>
+          <input type="text" name="creditcard" placeholder="xxxx xxxx xxxx xxxx" required pattern="[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}" maxlength="19"></span>
         <span>
           <label for="creditcard_expire">Giltigt till</label>
           <input type="month" name="creditcard_expire" class="setMinDate" min="2021-01" required></span>
@@ -32,7 +32,7 @@
 
 
 
-        <button type="button" name="button" onclick="getCustomerInfo('paymentForm');">Bekräfta</button>
+        <button type="submit" name="button" onclick="getCustomerInfo('paymentForm');">Bekräfta</button>
       </form>
     </div>
 
